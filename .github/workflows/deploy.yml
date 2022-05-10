@@ -23,3 +23,6 @@ jobs:
           HD_ALD_USR: ${{secrets.ALD_USR}}
           HD_BASE_URL_OF_BOT: ${{secrets.BASE_URL_OF_BOT}}
           HD_OWNER_ID: ${{secrets.OWNER_ID}}
+          HD_MEGA_API: ${{secrets.MEGA_API}}
+          HD_MEGA_UNAME: ${{secrets.MEGA_UNAME}}
+          HD_MEGA_PASS: ${{secrets.MEGA_PASS}}
