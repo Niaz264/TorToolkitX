@@ -22,7 +22,7 @@ except:
         GD_INDEX_URL = False
 
         # Time to wait before edit message
-        EDIT_SLEEP_SECS = 10
+        EDIT_SLEEP_SECS = 8
 
         # Telegram Upload Limit (in bytes)
         TG_UP_LIMIT = 1700000000
@@ -45,7 +45,7 @@ except:
         # DATABASE_URL = "dbname=tortk user=postgres password=your-pass host=db port=5432"
 
         # MEGA CONFIG
-        MEGA_ENABLE = False
+        MEGA_ENABLE = True
         MEGA_API = ""
         MEGA_UNAME = None
         MEGA_PASS = None
@@ -63,7 +63,7 @@ except:
 
         # Will be enabled once its set
         # For vps change it to True if config loaded
-        RCLONE_ENABLED = False
+        RCLONE_ENABLED = True
 
         # If the user fails to select whether to use rclone or telegram to upload this will be the deafult.
         DEFAULT_TIMEOUT = "leech"
@@ -75,10 +75,10 @@ except:
         DEF_RCLONE_DRIVE = ""
 
         # Max size of a playlist that is allowed (Number of videos)
-        MAX_YTPLAYLIST_SIZE = 20
+        MAX_YTPLAYLIST_SIZE = 100
 
         # Max size of the torrent allowed
-        MAX_TORRENT_SIZE = 10
+        MAX_TORRENT_SIZE = 150
 
         # Custom Trackers for QBT..
         ADD_CUSTOM_TRACKERS = True
@@ -89,18 +89,18 @@ except:
         BOT_CMD_POSTFIX = ""
 
         # Time out for the status Delete.
-        STATUS_DEL_TOUT = 20
+        STATUS_DEL_TOUT = 60
 
         # Allow the user settings to be accessed in private
-        USETTINGS_IN_PRIVATE = False
+        USETTINGS_IN_PRIVATE = True
 
         # Torrent max time to collect metadata in seconds
-        TOR_MAX_TOUT = 180
+        TOR_MAX_TOUT = 300
 
         # This is to stop someone from abusing the system by imposing the limit
         # [<GBs of total torrent sapce>, <Number of youtube videos allowed to download>, <Number of youtube playlists allowed to download>]
         USER_CAP_ENABLE = False
-        USER_CAP_LIMIT = [50, 10, 2]
+        USER_CAP_LIMIT = [250, 150, 50]
 
         # No need to worry about these
         # CHANGE THESE AT YOUR RISK
