@@ -737,24 +737,13 @@ async def handle_server_command(message):
 
     if callbk:
         msg = (
-            f"<b>BOT UPTIME:-</b> {diff}\n\n"
-            "<b>CPU STATS:-</b>\n"
-            f"Cores: {cores} Logical: {lcores}\n"
-            f"CPU Frequency: {freqcurrent}  Mhz Max: {freqmax}\n"
-            f"CPU Utilization: {cpupercent}%\n"
-            "\n"
-            "<b>STORAGE STATS:-</b>\n"
+            f"<b>🧧 BOT UPTIME:-</b> {diff}\n\n"
+            "<b>♻ STORAGE STATS:-</b>\n"
             f"Total: {totaldsk}\n"
             f"Used: {useddsk}\n"
             f"Free: {freedsk}\n"
             "\n"
-            "<b>MEMORY STATS:-</b>\n"
-            f"Available: {memavailable}\n"
-            f"Total: {memtotal}\n"
-            f"Usage: {mempercent}%\n"
-            f"Free: {memfree}\n"
-            "\n"
-            "<b>TRANSFER INFO:</b>\n"
+            "<b>🧿 TRANSFER INFO:</b>\n"
             f"Download: {dlb}\n"
             f"Upload: {upb}\n"
         )
@@ -766,14 +755,14 @@ async def handle_server_command(message):
             storage_percent = 0
 
         msg = (
-            f"<b>BOT UPTIME:-</b> {diff}\n\n"
-            f"CPU Utilization: {progress_bar(cpupercent)} - {cpupercent}%\n\n"
-            f"Storage used:- {progress_bar(storage_percent)} - {storage_percent}%\n"
-            f"Total: {totaldsk} Free: {freedsk}\n\n"
-            f"Memory used:- {progress_bar(mempercent)} - {mempercent}%\n"
-            f"Total: {memtotal} Free: {memfree}\n\n"
-            f"Transfer Download:- {dlb}\n"
-            f"Transfer Upload:- {upb}\n"
+            f"<b>🧧 BOT UPTIME:-</b> {diff}\n\n"
+            f"📮 CPU Utilization: {progress_bar(cpupercent)} - {cpupercent}%\n\n"
+            f"🔥 Storage used:- {progress_bar(storage_percent)} - {storage_percent}%\n"
+            f"♻ Total: {totaldsk} 🧇 Free: {freedsk}\n\n"
+            f"☑ Memory used:- {progress_bar(mempercent)} - {mempercent}%\n"
+            f"📍 Total: {memtotal} 🧨 Free: {memfree}\n\n"
+            f"🌹 Transfer Download:- {dlb}\n"
+            f"💥 Transfer Upload:- {upb}\n"
         )
         await message.reply(
             msg,
@@ -816,8 +805,8 @@ async def about_me(message):
         f"<b>Version</b>: <code>{__version__}</code>\n"
         f"<b>Telethon Version</b>: {telever}\n"
         f"<b>Pyrogram Version</b>: {pyrover}\n"
-        "<b>Created By</b>: @Yaknight\n\n"
-        "<b>Modified By</b>: @KangersHub\n\n"
+        "<b>Created By</b>: @MirrorUpdatesNNews\n\n"
+        "<b>Modified By</b>: @MirrorUpdatesNNews\n\n"
         "<u>Currents Configs:-</u>\n\n"
         f"<b>Bot Uptime:-</b> {diff}\n"
         "<b>Torrent Download Engine:-</b> <code>qBittorrent [4.3.0 fix active]</code> \n"
